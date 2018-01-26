@@ -1,0 +1,15 @@
+<application>
+  <component name="AppStorage">
+    <option name="lastSourceLanguage" value="AUTO" />
+    <option name="lastTargetLanguage" value="CHINESE" />
+    <histories>
+      <item value="Ex" />
+      <item value="The array buffer into which the elements of the ArrayList are stored. * The capacity of the ArrayList is the length of this array buffer. Any * empty ArrayList with elementData == EMPTY_ELEMENTDATA will be expanded to * DEFAULT_CAPACITY when the first element is added." />
+      <item value="get Layout Id" />
+      <item value="is Logined" />
+      <item value="Login" />
+      <item value="Toast Util" />
+      <item value="List" />
+    </histories>
+  </component>
+</application>

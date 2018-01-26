@@ -1,0 +1,17 @@
+<templateSet group="Bmob">
+  <template name="enull" value="if (e != null) {&#10;    ToastUtil.showShortToast($context$, &quot;请求数据发生错误&quot;);&#10;    e.printStackTrace();&#10;    return;&#10;}&#10;if (list.isEmpty()) {&#10;    return;&#10;}" description="判断异常/空list" toReformat="false" toShortenFQNames="true">
+    <variable name="context" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="bmobQuery" value="BmobQuery&lt;$BmobObject$&gt; $bmobQuery$ = new BmobQuery&lt;&gt;();&#10;$bmobQuery$.findObjects(new FindListener&lt;$BmobObject$&gt;() {&#10;    @Override&#10;    public void done(List&lt;$BmobObject$&gt; list, BmobException e) {&#10;        if (e != null) {&#10;            ToastUtil.showShortToast($context$, &quot;$message$&quot;);&#10;            return;&#10;        }&#10;        if (list.isEmpty()) {&#10;            return;&#10;        }&#10;        &#10;    }&#10;});" description="Bmob查询代码" toReformat="true" toShortenFQNames="true">
+    <variable name="BmobObject" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="bmobQuery" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="context" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="message" expression="" defaultValue="请求数据发生错误" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
